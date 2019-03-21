@@ -1,0 +1,48 @@
+$cubic: cubic-bezier(.64,.09,.08,1) !default;
+$turqoise: #1abc9c;
+$primary: $turqoise !default;
+$space-big: 40px !default;
+
+.chat-registration{
+
+    height: 200px;
+    width: 200px;
+    margin:5px;
+
+    input {
+        &[type="email"], &[type="text"], 
+        &[type="password"] {
+          margin-bottom: $space-big;
+          width: 200px;
+          display: block;
+          border: none;
+          padding: 5px 0;
+          border-bottom: solid 1px $primary;
+          will-change: background-position;
+          transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $primary 96%);
+          background-position: -200px 0;
+          background-size: 200px 100%;
+          background-repeat: no-repeat;
+          color: darken($primary, 20%);
+          &:focus, &:valid {
+            box-shadow: none;
+            outline: none;
+            background-position: 0 0;
+            &::-webkit-input-placeholder {
+              color: $primary;
+              font-size: 11px;
+              transform: translateY(-20px);
+              visibility: visible !important;
+            }
+          }
+          &::-webkit-input-placeholder {
+              transition: all 0.2s $cubic;
+          }
+        }
+    }
+    
+
+    
+
+}

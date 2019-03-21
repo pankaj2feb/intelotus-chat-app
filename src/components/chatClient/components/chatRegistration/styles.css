@@ -1,0 +1,29 @@
+.chat-registration {
+  height: 200px;
+  width: 200px;
+  margin: 5px; }
+  .chat-registration input[type="email"], .chat-registration input[type="text"], .chat-registration input[type="password"] {
+    margin-bottom: 40px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 5px 0;
+    border-bottom: solid 1px #1abc9c;
+    will-change: background-position;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 96%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #0e6252; }
+    .chat-registration input[type="email"]:focus, .chat-registration input[type="email"]:valid, .chat-registration input[type="text"]:focus, .chat-registration input[type="text"]:valid, .chat-registration input[type="password"]:focus, .chat-registration input[type="password"]:valid {
+      box-shadow: none;
+      outline: none;
+      background-position: 0 0; }
+      .chat-registration input[type="email"]:focus::-webkit-input-placeholder, .chat-registration input[type="email"]:valid::-webkit-input-placeholder, .chat-registration input[type="text"]:focus::-webkit-input-placeholder, .chat-registration input[type="text"]:valid::-webkit-input-placeholder, .chat-registration input[type="password"]:focus::-webkit-input-placeholder, .chat-registration input[type="password"]:valid::-webkit-input-placeholder {
+        color: #1abc9c;
+        font-size: 11px;
+        transform: translateY(-20px);
+        visibility: visible !important; }
+    .chat-registration input[type="email"]::-webkit-input-placeholder, .chat-registration input[type="text"]::-webkit-input-placeholder, .chat-registration input[type="password"]::-webkit-input-placeholder {
+      transition: all 0.2s cubic-bezier(0.64, 0.09, 0.08, 1); }

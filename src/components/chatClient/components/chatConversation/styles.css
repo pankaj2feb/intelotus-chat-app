@@ -1,0 +1,15 @@
+.chat-conversation {
+  height: 400px;
+  width: 300px; }
+  .chat-conversation .conversation {
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #80808066;
+    margin-right: auto;
+    margin-left: auto; }
+  .chat-conversation .userchat {
+    margin-bottom: 5px;
+    height: 50px;
+    width: 250px; }
