@@ -7,7 +7,7 @@ This react app is chat client which can be embedded on any web page. Customer ca
 * npm start
 
 
-##### This app should be used along with 
+##### This app should be used along with below project
 * intelotus-chat-server-admin 
 * intelotus-chat-server 
 
